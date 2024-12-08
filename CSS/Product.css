@@ -1,0 +1,259 @@
+@import url("Style.css");
+.single_product {
+  height: auto;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.single_product_left h3 {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Lalezar";
+}
+.single_product_left span {
+  display: inline-block;
+  margin-top: 10px;
+}
+.single_product_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single_product_right_img {
+  width: 70%;
+  height: 100%;
+}
+.single_product_right_img img {
+  width: 100%;
+  height: 100%;
+}
+.single_product_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.single_product_left_sizes {
+  margin-top: 20px;
+}
+.single_product_left_sizes .size {
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid #666;
+  padding: 8px 12px;
+}
+.single_product_left_pros {
+  margin-top: 20px;
+}
+.single_product_left_pros span {
+  display: block;
+  margin-top: 10px;
+}
+.single_product_left_desc {
+  margin-top: 20px;
+}
+.single_product_left_desc p {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 27px;
+}
+.btn_container {
+  margin-top: 20px;
+}
+.btn_container button {
+  position: relative;
+  border: none;
+  padding: 10px 30px;
+  width: 250px;
+  background-color: #1e9f95;
+  /* background-color: transparent; */
+  font-size: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+}
+.btn_container span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  background-color: #1b9086;
+  z-index: -1;
+  transition: all 0.8s;
+}
+.btn_container button:hover span {
+  width: 100%;
+}
+.btn_container button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+/* Users comments component 4 */
+.user_comments {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.user_comments h3 {
+  height: 5%;
+  font-family: "Lalezar";
+  font-size: 25px;
+  font-weight: 400;
+}
+.user_comments_container {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  background-color: #f4f4f4;
+}
+.single_comment {
+  height: 25%;
+  display: flex;
+  border-bottom: 2px solid #aaaaaa;
+  margin: 0 40px;
+  padding-bottom: 20px;
+}
+.single_comment:last-child {
+  border: none;
+}
+.comment_right {
+  width: 10%;
+  text-align: center;
+}
+.comment_right img {
+  height: 40%;
+  width: 65%;
+  border-radius: 100%;
+  margin-top: 40px;
+}
+.comment_left {
+  width: 90%;
+  padding-top: 50px;
+}
+.comment_left .title {
+  font-size: 18px;
+  font-family: "Lalezar";
+}
+.comment_left .date {
+  color: #999;
+  margin-right: 20px;
+}
+.comment_left .commetn {
+  font-size: 16px;
+  line-height: 27px;
+  margin: 10px 0;
+}
+.comment_left .recomend {
+  font-size: 18px;
+}
+.single_comment:nth-child(even) .comment_left .recomend {
+  color: #00c634;
+}
+/* Accordion */
+.accordion-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.accordion-container h3 {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: "Lalezar";
+}
+.accordion {
+  width: 100%;
+}
+.accordion > div {
+  width: 100%;
+}
+.accordion > div > .w-title {
+  height: 70px;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+.accordion > div.show > .w-title,
+.accordion > div:last-child > .w-title {
+  border-bottom: none;
+}
+.accordion > div:first-child > .w-title {
+  border-radius: 10px 10px 0 0;
+}
+.accordion > div:last-child > .w-title {
+  border-radius: 0 0 10px 10px;
+}
+.accordion > div.show:last-child > .w-title {
+  border-radius: 0;
+}
+.accordion > div > .w-title > .right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion > div > .w-title > .right > .img-container {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+.accordion > div > .w-title > .right img {
+  height: 50px;
+  width: 50px;
+}
+.accordion > div > .w-title > .right > .user-info {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.accordion > div > .w-title > .right > .user-info span:first-child {
+  font-size: 18px;
+  font-family: "Lalezar";
+}
+.accordion > div > .w-title::after {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../Images/Icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(270deg);
+  font-size: 25px;
+  color: #00c634;
+  transition: all 0.5s;
+}
+.accordion > div.show > .w-title::after {
+  transform: rotate(90deg);
+}
+
+.accordion > div > .comment {
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #f1f1f1;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  line-height: 27px;
+}
+.accordion > div.show > .comment {
+  padding: 15px;
+}
+.accordion > div.show:last-child > .comment {
+  border-bottom: 2px solid #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}

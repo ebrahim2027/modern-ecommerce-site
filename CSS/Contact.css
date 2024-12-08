@@ -1,0 +1,114 @@
+@import url(Style.css);
+.contact_us {
+}
+.contact_form {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.contact_inputs {
+  width: 50%;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.contact_inputs label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.contact_inputs input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+  color: #ddd !important;
+}
+.contact_inputs input:hover {
+  border-color: #3de3d5;
+}
+.contact_comment {
+  width: 100%;
+  padding: 5px 10px;
+}
+.contact_comment label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.contact_comment textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 15px;
+}
+.contact_comment textarea:hover {
+  border-color: #3de3d5;
+}
+.contact_form .btn {
+  position: relative;
+  width: 150px;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #24baad;
+  border: none;
+  outline: 0;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  background-color: #2bc9bc;
+  z-index: -1;
+}
+.btn:hover span {
+  width: 100%;
+  transition: 0.8s;
+}
+.btn:hover {
+  color: #fff;
+}
+.contact_info {
+  height: 600px;
+  display: flex;
+  padding: 30px 0;
+}
+.contact_info_right {
+  height: 100%;
+  width: 50%;
+  padding: 20px 0;
+  padding-left: 100px;
+}
+.contact_info_right p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.contact_info_right address {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.contact_info_right span {
+  display: block;
+  margin: 15px 0;
+  font-size: 18px;
+}
+.contact_info_left {
+  height: 100%;
+  width: 50%;
+}
+.contact_info_left img {
+  height: 100%;
+  width: 100%;
+}

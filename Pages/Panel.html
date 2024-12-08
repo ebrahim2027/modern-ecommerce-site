@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <title>Soholat/Panel</title>
+    <link rel="stylesheet" href="../CSS/Panel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header component 1 -->
+      <div class="header padding">
+        <div class="header_right">
+          <p>سهولت</p>
+        </div>
+        <div class="header_left">
+          <img src="../images/Icons/Logo.jpg" alt="" />
+        </div>
+      </div>
+      <!-- Panel component 2 -->
+      <div class="panel">
+        <div class="panel_right_sidebar">
+          <div class="sidebar_top">
+            <img src="../Images/Icons/Logo.jpg" alt="" />
+          </div>
+          <div class="sidebar_bottom">
+            <ul>
+              <li><a href="">تنظیمات صفحه اصلی</a></li>
+              <li><a href="">فهرست</a></li>
+              <li><a href="">دسته ها</a></li>
+              <li><a href="">حسابداری</a></li>
+              <li><a href="">محصولات</a></li>
+              <li><a href="">کد تخفیف</a></li>
+              <li><a style="color: red" href="">خروج</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel_left_body">
+          <h2>تنظیمات صفحه اصلی</h2>
+          <hr />
+          <form action="">
+            <div class="setting_input">
+              <label for="site_title">عنوان سایت</label>
+              <input type="text" id="site_title" name="first_name" />
+            </div>
+            <div class="setting_input">
+              <label for="f_color">انتخاب رنگ اصلی سایت</label>
+              <input type="color" id="f_color" />
+            </div>
+            <div class="setting_input">
+              <label for="s_color">انتخاب رنگ کامل سایت</label>
+              <input type="color" id="s_color" name="second_name" />
+            </div>
+            <div class="setting_input">
+              <label for="lg">انتخاب لوگوی سایت</label>
+              <input type="file" id="lg" name="logo" />
+            </div>
+            <div class="setting_input">
+              <label for="intro_text">متن قسمت معرفی سایت</label>
+              <input type="text" id="intro_text" name="interoduction_text" />
+            </div>
+            <a class="btn" href="#">ذخیره</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

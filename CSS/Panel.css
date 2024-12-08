@@ -1,0 +1,86 @@
+@import url("Style.css");
+.header_right p {
+  font-family: "Lalezar";
+  font-size: 25px;
+  color: #1e9f95;
+  text-shadow: 1px 2px 3px #9999994f;
+}
+.container {
+  height: 100vh;
+}
+.panel {
+  display: flex;
+  height: 89%;
+}
+.panel_right_sidebar {
+  height: 100%;
+  width: 18%;
+  background-color: #1e9f95;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar_top {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.sidebar_top img {
+  height: 80%;
+  width: 65%;
+  border-radius: 100%;
+}
+.sidebar_bottom {
+  height: 70%;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+.sidebar_bottom ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.sidebar_bottom ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.panel_left_body {
+  height: 100%;
+  width: 82%;
+  padding: 25px;
+}
+.panel_left_body h2 {
+  margin-bottom: 20px;
+}
+.setting_input {
+  margin: 20px;
+}
+.setting_input label {
+  display: block;
+  margin-bottom: 10px;
+}
+.setting_input input[type="text"] {
+  width: 250px;
+  padding: 10px;
+  border: #888 solid 1px;
+  outline: 0;
+}
+.setting_input input[type="color"] {
+  width: 70px;
+}
+.panel_left_body .btn {
+  display: inline-block;
+  border: none;
+  background-color: #1e9f95;
+  padding: 10px 30px;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 20px;
+  border-radius: 3px;
+}
+.panel_left_body .btn:hover {
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
